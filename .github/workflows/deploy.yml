@@ -36,6 +36,8 @@ jobs:
       # 步骤2：设置 GitHub Pages
       - name: Setup Pages
         uses: actions/configure-pages@v4  # 配置 Pages 环境
+        with:
+          enablement: true  # 自动启用 GitHub Pages（如果尚未启用）
       
       # 步骤3：上传网站文件
       - name: Upload artifact
