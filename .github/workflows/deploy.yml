@@ -9,23 +9,11 @@ on:
 
 # 权限设置：为工作流分配必要的权限
 permissions:
-  contents: read    # 读取仓库内容的权限
-  pages: write      # 写入 GitHub Pages 的权限
-  id-token: write   # 写入 ID token 的权限（用于安全认证）
-  actions: write    # 写入 Actions 的权限（用于创建和管理 Pages）
-
-# 并发控制：确保同一时间只有一个部署任务运行
-concurrency:
-  group: "pages"              # 并发组名称
-  cancel-in-progress: false   # 不取消正在进行的任务
+  contents: write   # 写入仓库内容的权限（用于推送到gh-pages分支）
 
 # 定义工作任务
 jobs:
   deploy:
-    # 运行环境设置
-    environment:
-      name: github-pages                              # 环境名称
-      url: ${{ steps.deployment.outputs.page_url }}  # 部署后的网站URL
     runs-on: ubuntu-latest  # 使用最新版本的 Ubuntu 虚拟机
     
     # 执行步骤
@@ -34,19 +22,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4  # 使用官方检出动作的v4版本
       
-      # 步骤2：设置 GitHub Pages
-      - name: Setup Pages
-        uses: actions/configure-pages@v4  # 配置 Pages 环境
-        with:
-          enablement: true  # 自动启用 GitHub Pages（如果尚未启用）
-      
-      # 步骤3：上传网站文件
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: '.'  # 上传当前目录的所有文件（可自定义路径）
-      
-      # 步骤4：部署到 GitHub Pages
+      # 步骤2：部署到 GitHub Pages
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4  # 执行实际的部署操作
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./  # 发布当前目录的所有文件
+          publish_branch: gh-pages  # 发布到 gh-pages 分支
