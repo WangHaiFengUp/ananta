@@ -1,0 +1,72 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="keychainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b9d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c44569;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="metalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#silver;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#gray;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="200" fill="#f8f9fa" rx="10"/>
+  
+  <!-- Key ring -->
+  <circle cx="100" cy="60" r="25" stroke="url(#metalGradient)" stroke-width="4" fill="none"/>
+  <circle cx="100" cy="60" r="20" stroke="url(#metalGradient)" stroke-width="2" fill="none" opacity="0.5"/>
+  
+  <!-- Chain -->
+  <rect x="98" y="85" width="4" height="15" rx="2" fill="url(#metalGradient)"/>
+  <rect x="98" y="100" width="4" height="15" rx="2" fill="url(#metalGradient)"/>
+  <rect x="98" y="115" width="4" height="15" rx="2" fill="url(#metalGradient)"/>
+  
+  <!-- Keychain charm -->
+  <g transform="translate(100, 150)">
+    <!-- Main charm body -->
+    <rect x="-20" y="-20" width="40" height="40" rx="20" fill="url(#keychainGradient)"/>
+    
+    <!-- Character face -->
+    <circle cx="-8" cy="-8" r="3" fill="white"/>
+    <circle cx="8" cy="-8" r="3" fill="white"/>
+    <circle cx="-8" cy="-8" r="1.5" fill="#333"/>
+    <circle cx="8" cy="-8" r="1.5" fill="#333"/>
+    <path d="M-5 0 Q0 3 5 0" stroke="#333" stroke-width="1.5" fill="none"/>
+    
+    <!-- Ears -->
+    <ellipse cx="-15" cy="-15" rx="3" ry="8" fill="url(#keychainGradient)"/>
+    <ellipse cx="15" cy="-15" rx="3" ry="8" fill="url(#keychainGradient)"/>
+    
+    <!-- Inner ear -->
+    <ellipse cx="-15" cy="-15" rx="1.5" ry="4" fill="#fff" opacity="0.7"/>
+    <ellipse cx="15" cy="-15" rx="1.5" ry="4" fill="#fff" opacity="0.7"/>
+    
+    <!-- Cheek blush -->
+    <circle cx="-12" cy="-3" r="2" fill="#ff9999" opacity="0.6"/>
+    <circle cx="12" cy="-3" r="2" fill="#ff9999" opacity="0.6"/>
+    
+    <!-- Small details -->
+    <rect x="-2" y="8" width="4" height="8" rx="2" fill="white" opacity="0.8"/>
+    <text x="0" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="#333">
+      ♪
+    </text>
+  </g>
+  
+  <!-- Shine effect -->
+  <ellipse cx="85" cy="135" rx="8" ry="15" fill="white" opacity="0.3" transform="rotate(-30 85 135)"/>
+  
+  <!-- Sparkles -->
+  <g fill="gold" opacity="0.7">
+    <polygon points="40,100 42,103 45,103 43,105 44,108 40,106 36,108 37,105 35,103 38,103"/>
+    <polygon points="160,80 162,83 165,83 163,85 164,88 160,86 156,88 157,85 155,83 158,83"/>
+    <polygon points="150,140 152,143 155,143 153,145 154,148 150,146 146,148 147,145 145,143 148,143"/>
+    <polygon points="50,160 52,163 55,163 53,165 54,168 50,166 46,168 47,165 45,163 48,163"/>
+  </g>
+  
+  <!-- Product label -->
+  <rect x="10" y="10" width="70" height="20" rx="10" fill="rgba(255,255,255,0.9)"/>
+  <text x="45" y="23" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">
+    キーホルダー
+  </text>
+</svg>

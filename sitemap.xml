@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    
+    <!-- 主页 -->
+    <url>
+        <loc>https://www.musume.online/</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- 新闻页面 -->
+    <url>
+        <loc>https://www.musume.online/#news</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- 关于页面 -->
+    <url>
+        <loc>https://www.musume.online/#about</loc>
+        <lastmod>2024-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- 内容页面 -->
+    <url>
+        <loc>https://www.musume.online/#contents</loc>
+        <lastmod>2024-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- 游戏页面 -->
+    <url>
+        <loc>https://www.musume.online/#game</loc>
+        <lastmod>2024-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- 动画页面 -->
+    <url>
+        <loc>https://www.musume.online/#anime</loc>
+        <lastmod>2024-01-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- 音乐页面 -->
+    <url>
+        <loc>https://www.musume.online/#music</loc>
+        <lastmod>2024-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- 漫画页面 -->
+    <url>
+        <loc>https://www.musume.online/#comics</loc>
+        <lastmod>2024-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- 活动页面 -->
+    <url>
+        <loc>https://www.musume.online/#event</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- 角色页面 -->
+    <url>
+        <loc>https://www.musume.online/#character</loc>
+        <lastmod>2024-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- 特别页面 -->
+    <url>
+        <loc>https://www.musume.online/#special</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- 商品页面 -->
+    <url>
+        <loc>https://www.musume.online/#goods</loc>
+        <lastmod>2024-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- 网店页面 -->
+    <url>
+        <loc>https://www.musume.online/#webstore</loc>
+        <lastmod>2024-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+</urlset>

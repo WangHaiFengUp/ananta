@@ -1,0 +1,24 @@
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b9d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c44569;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="25" fill="url(#logoGradient)" opacity="0.1"/>
+  
+  <!-- Horse silhouette -->
+  <path d="M15 35 Q20 25 30 25 Q40 25 45 35 Q40 45 30 45 Q20 45 15 35 Z" fill="url(#logoGradient)"/>
+  <circle cx="25" cy="30" r="2" fill="white"/>
+  <circle cx="35" cy="30" r="2" fill="white"/>
+  
+  <!-- Text -->
+  <text x="65" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">
+    ウマ娘
+  </text>
+  <text x="65" y="42" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    PRETTY DERBY
+  </text>
+</svg>
