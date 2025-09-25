@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简单游戏站 - 休闲小游戏合集</title>
+    <meta name="description" content="简单有趣的休闲小游戏合集，包含点击游戏、记忆游戏等多种玩法">
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.svg" alt="游戏站Logo" class="logo-img">
+                <h1>简单游戏站</h1>
+            </div>
+            <nav class="nav">
+                <a href="#games" class="nav-link">游戏</a>
+                <a href="#about" class="nav-link">关于</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- 英雄区域 -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">欢迎来到简单游戏站</h2>
+                    <p class="hero-subtitle">享受简单有趣的休闲游戏时光</p>
+                    <img src="images/hero-bg.svg" alt="游戏背景" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- 游戏区域 -->
+        <section id="games" class="games-section">
+            <div class="container">
+                <h2 class="section-title">精选游戏</h2>
+                <div class="games-grid">
+                    <!-- 点击游戏 -->
+                    <div class="game-card">
+                        <div class="game-icon">
+                            <img src="images/goods1.svg" alt="点击游戏" class="game-image">
+                        </div>
+                        <h3 class="game-title">点击大师</h3>
+                        <p class="game-description">测试你的反应速度，看看你能点击多快！</p>
+                        <div class="game-area" id="clickGame">
+                            <div class="click-target" id="clickTarget">点击我！</div>
+                            <div class="score">得分: <span id="clickScore">0</span></div>
+                            <div class="timer">时间: <span id="clickTimer">10</span>s</div>
+                        </div>
+                    </div>
+
+                    <!-- 记忆游戏 -->
+                    <div class="game-card">
+                        <div class="game-icon">
+                            <img src="images/goods2.svg" alt="记忆游戏" class="game-image">
+                        </div>
+                        <h3 class="game-title">记忆挑战</h3>
+                        <p class="game-description">记住颜色序列，挑战你的记忆力！</p>
+                        <div class="game-area" id="memoryGame">
+                            <div class="memory-grid">
+                                <div class="memory-cell" data-color="red"></div>
+                                <div class="memory-cell" data-color="blue"></div>
+                                <div class="memory-cell" data-color="green"></div>
+                                <div class="memory-cell" data-color="yellow"></div>
+                            </div>
+                            <div class="memory-controls">
+                                <button id="startMemory" class="game-btn">开始游戏</button>
+                                <div class="score">关卡: <span id="memoryLevel">1</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 猜数字游戏 -->
+                    <div class="game-card">
+                        <div class="game-icon">
+                            <img src="images/goods3.svg" alt="猜数字游戏" class="game-image">
+                        </div>
+                        <h3 class="game-title">猜数字</h3>
+                        <p class="game-description">我想了一个1-100的数字，你能猜中吗？</p>
+                        <div class="game-area" id="guessGame">
+                            <input type="number" id="guessInput" placeholder="输入你的猜测" min="1" max="100">
+                            <button id="guessBtn" class="game-btn">猜测</button>
+                            <div class="guess-feedback" id="guessFeedback">开始猜测吧！</div>
+                            <div class="guess-attempts">尝试次数: <span id="guessAttempts">0</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 关于区域 -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">关于我们</h2>
+                        <p>简单游戏站致力于为大家提供简单有趣的休闲游戏体验。我们相信游戏应该是轻松愉快的，让每个人都能在忙碌的生活中找到一丝乐趣。</p>
+                        <p>所有游戏都可以直接在浏览器中游玩，无需下载安装。快来挑战你的技能，享受游戏的乐趣吧！</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/about-image.svg" alt="关于我们" class="about-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 简单游戏站. 让游戏更简单，让快乐更纯粹。</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

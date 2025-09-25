@@ -1,0 +1,62 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shirtGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="designGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b9d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c44569;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="200" fill="#f8f9fa" rx="10"/>
+  
+  <!-- T-shirt body -->
+  <rect x="50" y="80" width="100" height="100" rx="10" fill="url(#shirtGradient)"/>
+  
+  <!-- T-shirt sleeves -->
+  <rect x="30" y="80" width="25" height="40" rx="12" fill="url(#shirtGradient)"/>
+  <rect x="145" y="80" width="25" height="40" rx="12" fill="url(#shirtGradient)"/>
+  
+  <!-- Neckline -->
+  <path d="M75 80 Q100 70 125 80 Q100 90 75 80" fill="#f8f9fa"/>
+  
+  <!-- Design on shirt -->
+  <g transform="translate(100, 120)">
+    <!-- Horse silhouette -->
+    <ellipse cx="0" cy="10" rx="25" ry="15" fill="url(#designGradient)" opacity="0.8"/>
+    <path d="M-15 0 Q0 -10 15 0 Q10 10 0 15 Q-10 10 -15 0" fill="url(#designGradient)"/>
+    <circle cx="-8" cy="2" r="2" fill="white"/>
+    <circle cx="8" cy="2" r="2" fill="white"/>
+    
+    <!-- Text under design -->
+    <text x="0" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white">
+      ウマ娘
+    </text>
+  </g>
+  
+  <!-- Shirt details -->
+  <rect x="95" y="85" width="10" height="3" rx="1" fill="rgba(255,255,255,0.3)"/>
+  <rect x="95" y="90" width="10" height="3" rx="1" fill="rgba(255,255,255,0.3)"/>
+  
+  <!-- Size tag -->
+  <rect x="140" y="170" width="15" height="8" rx="2" fill="white"/>
+  <text x="147.5" y="176" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="#333">
+    M
+  </text>
+  
+  <!-- Sparkles -->
+  <g fill="gold" opacity="0.6">
+    <polygon points="25,50 27,53 30,53 28,55 29,58 25,56 21,58 22,55 20,53 23,53"/>
+    <polygon points="175,60 177,63 180,63 178,65 179,68 175,66 171,68 172,65 170,63 173,63"/>
+    <polygon points="160,150 162,153 165,153 163,155 164,158 160,156 156,158 157,155 155,153 158,153"/>
+  </g>
+  
+  <!-- Product label -->
+  <rect x="10" y="10" width="50" height="20" rx="10" fill="rgba(255,255,255,0.9)"/>
+  <text x="35" y="23" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">
+    Tシャツ
+  </text>
+</svg>

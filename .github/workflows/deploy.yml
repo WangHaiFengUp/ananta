@@ -1,0 +1,49 @@
+# GitHub Actions 工作流名称，会显示在 Actions 页面
+name: Deploy to GitHub Pages
+
+# 触发条件：定义何时运行此工作流
+on:
+  push:
+    branches:
+      - main  # 当推送到 main 分支时触发（可自定义分支名）
+
+# 权限设置：为工作流分配必要的权限
+permissions:
+  contents: read    # 读取仓库内容的权限
+  pages: write      # 写入 GitHub Pages 的权限
+  id-token: write   # 写入 ID token 的权限（用于安全认证）
+
+# 并发控制：确保同一时间只有一个部署任务运行
+concurrency:
+  group: "pages"              # 并发组名称
+  cancel-in-progress: false   # 不取消正在进行的任务
+
+# 定义工作任务
+jobs:
+  deploy:
+    # 运行环境设置
+    environment:
+      name: github-pages                              # 环境名称
+      url: ${{ steps.deployment.outputs.page_url }}  # 部署后的网站URL
+    runs-on: ubuntu-latest  # 使用最新版本的 Ubuntu 虚拟机
+    
+    # 执行步骤
+    steps:
+      # 步骤1：检出代码
+      - name: Checkout
+        uses: actions/checkout@v4  # 使用官方检出动作的v4版本
+      
+      # 步骤2：设置 GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v4  # 配置 Pages 环境
+      
+      # 步骤3：上传网站文件
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'  # 上传当前目录的所有文件（可自定义路径）
+      
+      # 步骤4：部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4  # 执行实际的部署操作
